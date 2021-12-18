@@ -34,7 +34,7 @@ jobs:
       run: yarn build
       
     - name: Install Surge
-      run: npm install -g surge
+      run: sudo npm install -g surge
 
     - name: Deploy to Surge
       run: surge ./build ashraf-food.surge.sh --token ${{ secrets.PROJECT_TOKEN }}
