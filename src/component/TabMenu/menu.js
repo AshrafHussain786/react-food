@@ -21,7 +21,7 @@ const Menu = [
         image: "images/puri.jpg",
         name:"kachori",
         category: "breakfast",
-        price: "Rs. 100",
+        price: "Rs. 50",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
     },
      {
