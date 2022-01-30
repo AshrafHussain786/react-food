@@ -16,7 +16,7 @@ const GalleryReact = () => {
 
     return (
         <>
-            <h1 className="mt-3 text-center main-heading">Order Your Favourite Dish</h1>
+            <h1 className="mt-5 text-center main-heading">Order Your Favourite Dish</h1>
             <hr />
             
             <div className="menu-tabs container">
@@ -30,10 +30,10 @@ const GalleryReact = () => {
             </div>
 
             {/* my main items section  */}
-            <div className="menu-items container-fluid">
+            <div className="menu-items container-fluid mt-5">
                 <div className="row">
-                    <div className="col-12 mx-auto">
-                        <div className="row mx-5">
+                    <div className="col-11 mx-auto">
+                        <div className="row my-5">
                             
                             {
                                 items.map((elem) => {
@@ -41,28 +41,27 @@ const GalleryReact = () => {
 
                                     return (
                                     
-                                        <div className="item1 col-12 col-md-6 col-lg-6 col-xl-4 my-5" key={id}>
-                                            <div className="row Item-inside">
+                                        <div className="container" key={id}>
+                                            <div className="row">
                                                 {/* for images */}
-                                                <div className="col-12 col-md-12 col-lg-4 img-div">
+                                                <div className="img-div">
                                                     <img src={image} alt={name} className="img-fluid"/>
                                                 </div>
 
                                                 {/* menu items description */}
-                                                <div className="col-12 col-md-12 col-lg-8">
-                                                    <div className="main-title pt-4 pb-3">
+                                                <div className="img-description">
+                                                    <div className="main-title">
                                                         <h1>{name}</h1>
                                                         <p>{description }</p>
-                                                    </div>
-                                                    <br />
+                                                    </div>                                                    
                                                     <div className="menu-price-book">
                                                         <div className="price-book-divide d-flex justify-content-between ">
-                                                            <h2>Price : {price}</h2>
+                                                            <h2>Price: {price}</h2>
                                                             <a href="ashrafhussain786@yahoo.com">
                                                                 <button className="btn btn-primary">Order Now</button>
                                                             </a>
                                                         </div>
-                                                        {/* <p>*Prices may vary on selected date.</p> */}
+                                                        <p>*Prices may vary on selected date.</p>
                                                     </div>
                                                 </div>
                                             </div>
